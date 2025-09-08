@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+ブラウザの判別  
+</body>
+<script>
+//   const userAgent = navigator.userAgent;
+//   if (userAgent.includes('Chrome')) {
+//     alert('Google Chromeブラウザを使用しています');
+//   } else if (userAgent.includes('Firefox')) {
+//     alert('Mozilla Firefoxブラウザを使用しています');
+//   } else if (userAgent.includes('Edge')) {
+//     alert('Microsoft Edgeブラウザを使用しています');
+//   } else if (userAgent.includes('Safari')) {
+//     alert('Apple Safariブラウザを使用しています');
+//   } else {
+//     alert('その他のブラウザを使用しています');
+// }
+var agent = window.navigator.userAgent.toLowerCase();
+alert(agent);
+if(agent.indexOf('msie') > -1) {
+  alert('IEブラウザです');
+} else if(agent.indexOf('edg') > -1) {
+  alert('Edgeブラウザです');
+} else if(agent.indexOf('chrome') > -1) {
+  alert('Chromeブラウザです');
+} else if(agent.indexOf('safari') > -1) {
+  alert('Safariブラウザです');
+} else if(agent.indexOf('firefox') > -1) {
+  alert('Firefoxブラウザです');
+} else {
+  alert('その他のブラウザです');
+}
+</script>
+</html>
