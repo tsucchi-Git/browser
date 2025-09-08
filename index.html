@@ -30,7 +30,13 @@ if(agent.indexOf('msie') > -1) {
 } else if(agent.indexOf('chrome') > -1) {
   alert('Chromeブラウザです');
 } else if(agent.indexOf('safari') > -1) {
-  alert('Safariブラウザです');
+  alert('Iphoneユーザーにお知らせです。<br>' + '　お使いのブラウザはApple Safariと推定されます。<br>' 
+  + 'このサイトでは、獲得したスタンプなどのデータをブラウザに保存させる機能を利用しています。<br>'
+  + '　しかし、Apple Safariについては、サイトアクセス後７日間ユーザーの操作がない場合、保存したデータが削除されてしまいます。つまり、獲得したスタンプが消えてしまい、復活できません。<br><br>' 
+  + '解決策：<br>'
+  + '1)Google Chrome（推奨）など他のブラウザを使用する。<br>'
+  + '2)どうしてもApple Safariをブラウザとして利用する場合は、7日間に一度はこのサイトはアクセスして、何らかの操作をする。しかし、こちらはお勧めしません。'
+)
 } else if(agent.indexOf('firefox') > -1) {
   alert('Firefoxブラウザです');
 } else {
