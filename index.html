@@ -173,7 +173,7 @@
             } else if(agent.indexOf('edg') > -1) {
               browser1();
             } else if(agent.indexOf('chrome') > -1) {
-              browser1();
+              browser2();
             } else if(agent.indexOf('safari') > -1) {
               browser2();
             } else if(agent.indexOf('firefox') > -1) {
@@ -210,6 +210,8 @@
         var stop_=document.getElementById("stop_button");
         stop_.addEventListener('click', function(event){
           alert('Google Chromeなど他のブラウザを利用して、本サイトにアクセスしてください。')
+          stop_.style.display="none";
+          document.getElementById("continue_button").style.display="none";
           window.close();
         });
 
